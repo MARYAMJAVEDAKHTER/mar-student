@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Footer.css */
+.footer {
+  width: 100%;
+  height: 60px;  /* ✅ Consistent height with header */
+  background-color:rgb(32, 94, 94); /* ✅ Same color as header */
+  color: white; /* ✅ White text for visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ✅ Centered content */
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000; /* ✅ Ensures it stays above other elements */
+  box-shadow: 0px -4px 10px rgb(32, 94, 94); /* ✅ Shadow effect */
+}
+/* Header.css */
+.header {
+  width: 100%;
+  height: 60px;  /* ✅ Thoda zyada height taake achha lage */
+  background-color: rgb(32, 94, 94); /* ✅ Background color fix */
+  color: white; /* ✅ Text ko white taake readable ho */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ✅ Center me text */
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* ✅ Ensure header stays on top */
+  box-shadow: 0px 4px 10px  rgb(32, 94, 94); /* ✅ Shadow effect */
+}
+
