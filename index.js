@@ -1,0 +1,69 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/js/bootstrap.bundle"
+import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import About from './page/About';
+import Error404 from './page/Error404';
+import App from './App';
+import Home from './Home';
+import Login from './component/Login';
+import Signup from './component/Signup';
+import StudentDashboard from './component/StudentDashboard';
+import Terms from './page/Term';
+import PrivacyPolicy from './page/Privacy';
+import StudentProfile from './component/Profile';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+let route = createBrowserRouter([
+  {
+    path: '/',
+    element: <App /> // App only wraps Home page
+  },
+  {
+    path: 'about',
+    element: <About/>
+  },
+  {
+    path: '/login',
+    element: <Login/>
+  },
+ { 
+  path: '/signup',
+    element: <Signup/>
+ },
+ {
+  path: '/student',
+  element: <StudentDashboard/>
+},
+{
+  path: '/term',
+  element: <Terms/>
+},
+{
+  path: '/privacy',
+  element: <PrivacyPolicy/>
+},
+{
+  path: '/profile',
+  element: <StudentProfile/>
+},
+  {
+    path: '*',
+    element: <Error404 />
+  },
+ 
+]);
+
+root.render(
+  <React.StrictMode>
+    <RouterProvider router={route} />
+  </React.StrictMode>
+);
+
+reportWebVitals();
+
+

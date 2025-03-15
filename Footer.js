@@ -1,10 +1,19 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./Footer.css";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className='footer'>
-                   <p>© 2025 Student Attendance System</p>
+    <footer className="footer">
+    <div className="bubble-container">
+      {[...Array(10)].map((_, i) => (
+        <div key={i} className="bubble" style={{ animationDelay: `${i * 0.2}s` }}></div>
+      ))}
     </div>
-  )
-}
+    <div>
+      &copy; 2025 <span>Student Attendance System</span> | Contact: <span>info@example.com</span>
+    </div>
+  </footer>
+  );
+};
+
+export default Footer;
