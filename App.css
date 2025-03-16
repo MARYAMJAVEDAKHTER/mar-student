@@ -479,7 +479,7 @@ background-color: #27637b;
 }
 
 .hero button {
-  background-color: #f4b400;
+  background-color: #1d3b47;
   color: white;
   width: 160px;
   font-size: 18px;
@@ -493,22 +493,27 @@ background-color: #27637b;
   background-color: #333;
 }
 /*..............student............*/
-/* Navbar Styling */
 
 /* Container Styling */
 .container {
   max-width: 1000px;
   margin: 50px 50px;
-  background: white;
+  background:transparent;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 300px;
+  height: 360px;
+  backdrop-filter:blur(80px) ;
+  border: 2px solid rgb(113, 229, 245);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+
 }
 
 .container h2 {
   margin-bottom: 20px;
+  font-weight: bold;
+  color: #083638;
 }
 
 .attendance-btn {
@@ -534,12 +539,12 @@ table {
 th, td {
   padding: 8px 12px;
   text-align: center;
-  border: 1px solid #000;
+  border: 1px solid black;
 }
 
 th {
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   white-space: nowrap; /* Prevents wrapping */
 }
@@ -554,8 +559,10 @@ th {
 .about-container {
   max-width: 900px;
   margin: 50px auto;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 2px;
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+  border: 2px solid rgb(113, 229, 245);
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -565,10 +572,11 @@ th {
   color: #2c3e50;
   margin-bottom: 20px;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .about-container p {
-  color: #555;
+  color:white;
   line-height: 1.8;
   margin-bottom: 15px;
   font-size: 1.1rem;
@@ -579,28 +587,32 @@ th {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(113, 229, 245);
   font-family: Arial, sans-serif;
 }
 
 /* Title */
 .terms-title {
-  color: #0c4c4e;
+  color: #083031;
   text-align: center;
   margin-bottom: 20px;
   font-size: 28px;
+  font-weight: bold;
 }
 
 /* List */
 .terms-list {
   list-style: none;
   padding: 0;
-  color: #333;
+  color: white;
   line-height: 1.8;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .terms-list li {
@@ -622,26 +634,29 @@ th {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  background-color: transparent;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+  border: 2px solid rgb(113, 229, 245);
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
 
 /* Title */
 .privacy-title {
-  font-size: 28px;
-  color: #0c4c4e;
+  font-size: 30px;
+  color: #083638;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* Content */
 .privacy-content p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
-  color: #333;
+  color: white;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
@@ -651,10 +666,10 @@ th {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 10px;
-  background: #f4f4f4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
 }
 
 /* Profile Info */
@@ -664,15 +679,19 @@ th {
   margin: 60px auto;
   padding: 10px;
   border-radius: 10px;
-  background: #edf5f8 ;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
   text-align: left;
+  border: 2px solid rgb(113, 229, 245);
+
 }
 
 .profile-info h1 {
   text-align: center;
-  color:rgb(14, 74, 61);
-  font-size: 24px;
+  color:#083638;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .profile-info p {
@@ -680,6 +699,7 @@ th {
     color:black ;
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
+    font-weight: bold;
 }
 #profile-info p:last-child {
   border-bottom: none;
