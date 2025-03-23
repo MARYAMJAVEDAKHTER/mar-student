@@ -88,10 +88,6 @@ color: white;
 
 /* Hover Effect */
 
-
-
-
-
 /* Features Section */
 .features {
   background-color: transparent;
@@ -103,7 +99,7 @@ color: white;
   bottom: 0;
 }
 .feature {
-  background-color: #eee;
+  background:linear-gradient(rgba(163, 163, 163, 0.6), rgba(191, 191, 191, 0.6));
   padding: 10px 0px;
   width: 250px;
   border-radius: 10px;
@@ -113,7 +109,7 @@ color: white;
 .features h3{
   font-size: 30px;
   margin-bottom: 5px;
-  color:white
+  color:white;
 }
 
 .feature-box {
@@ -125,6 +121,7 @@ color: white;
 
 
 .feature h4 {
+  color:white;
   font-size: 18px;
   margin-bottom: 0px;
 }
@@ -150,23 +147,35 @@ list-style: none;
 .active{
   left: 0%;
 }
+.p{
+  color: #083031;
+}
 /*.............login.............*/
 .imageslider{
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
   background-image: url(/src/image/WhatsApp\ Image\ 2025-02-28\ at\ 3.23.00\ AM\ \(1\).jpeg);
-  background-size:100% 100%;
-  
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+}
+.image{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/src/image/WhatsApp\ Image\ 2025-02-28\ at\ 3.23.00\ AM\ \(1\).jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
 }
 
-  
-
-/* General Body Styling */
-
-
-/* Login Box */
 /* ........................... LOGIN PAGE ........................... */
 
 /* Login Box */
@@ -180,7 +189,7 @@ list-style: none;
 position: fixed;
   margin-top: 30px;
   padding: 30px 40px;
-  border: 2px solid rgb(113, 229, 245);
+  border: 2px solid #34697e;
   background-color:transparent; /* White background to make it visible */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
@@ -301,7 +310,7 @@ position: fixed;
 }
 
 .login-box .para-2 a {
-  color: #ebeff0;
+  color: yellowgreen;
   text-decoration: none;
   font-weight: bold;
 }
@@ -338,9 +347,6 @@ input[type="text"],input[type="email"], input[type="password"]{
 }
 
 
-
-
-
 /* Mobile Responsiveness */
 @media (max-width: 400px) {
   .login-box {
@@ -367,7 +373,7 @@ input[type="text"],input[type="email"], input[type="password"]{
 position: fixed;
   margin-top: 30px;
   padding: 30px 40px;
-  border: 2px solid rgb(113, 229, 245);
+  border: 2px solid #34697e;
   background-color:transparent; /* White background to make it visible */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
@@ -457,14 +463,28 @@ background-color: #27637b;
   padding-top: 4npx;
   margin-top: -140px;
 }
+/* Mobile Responsiveness */
+@media (max-width: 400px) {
+  .signup-box {
+    width: 90%;
+    height: auto;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
 
 /*.................hero................*/
 .hero {
-  background: url(/src/image/WhatsApp\ Image\ 2025-02-28\ at\ 3.23.00\ AM\ \(1\).jpeg)
-    no-repeat center center/cover;
-  color:transparent;
+ color: transparent;
   text-align: center;
   padding: 100px 20px;
+  
 }
 
 .hero h1 {
@@ -474,6 +494,7 @@ background-color: #27637b;
 
 .hero p {
   color:white;
+  font-weight: bold;
   font-size: 20px;
   margin-bottom: 0px;
 }
@@ -503,7 +524,7 @@ background-color: #27637b;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 360px;
+  height: 370px;
   backdrop-filter:blur(80px) ;
   border: 2px solid rgb(113, 229, 245);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
@@ -537,6 +558,7 @@ table {
 }
 
 th, td {
+  color: white;
   padding: 8px 12px;
   text-align: center;
   border: 1px solid black;
@@ -556,31 +578,92 @@ th {
   cursor: pointer;
 }
 /*....aboutpage.............*/
+/* About Container */
 .about-container {
   max-width: 900px;
   margin: 50px auto;
-  padding: 2px;
-  background-color: transparent;
-  backdrop-filter: blur(100px);
-  border: 2px solid rgb(113, 229, 245);
+  padding: 40px ;
+  height: 380px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.about-container h1 {
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.about-container p {
-  color:white;
   line-height: 1.8;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+  border: 2px solid #34697e;
 }
+
+
+.about-container h4 {
+  color:#f7fafa ;
+  margin: 2px 20px;
+  margin-top: 2px;
+  padding: 0px 12px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Paragraphs */
+.about-container p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  margin-top: 2px;
+  color:whitesmoke;
+}
+
+/* List */
+.about-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-container ul li {
+  background: #f0f0f0;
+  margin: 10px 0;
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.about-container ul li:hover {
+  transform: translateY(-5px);
+  background:#b4d4e1;
+  
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /*..........terms.......*/
 /* Container */
 .terms-container {
@@ -704,9 +787,51 @@ th {
 #profile-info p:last-child {
   border-bottom: none;
 }
+/*...............................admin.................*/
+.btn {
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 2px;
+  margin-bottom: 5px;
+}
 
+.edit-btn {
+  background-color:#526c76;
+  color: white;
+}
 
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
 
-
-
-
+.add-user-btn {
+  background-color:#526c76;
+  color: white;
+  font-size: 18px;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.add-user-btn:hover {
+  background-color:#1a4353;
+}
+.export-btn{
+  background-color:#526c76;
+  color: white;
+  font-size: 18px;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.export-btn:hover {
+  background-color:#1a4353;
+}
