@@ -15,6 +15,10 @@ import StudentDashboard from './component/StudentDashboard';
 import Terms from './page/Term';
 import PrivacyPolicy from './page/Privacy';
 import StudentProfile from './component/Profile';
+import AdminPanel from './component/admin';
+import Reports from './component/report';
+import ParentPortal from './component/parent';
+import FacultyPortal from './component/Faculty';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -47,9 +51,26 @@ let route = createBrowserRouter([
   path: '/privacy',
   element: <PrivacyPolicy/>
 },
+
+{
+  path: '/admin',
+  element: <AdminPanel/>
+},
+{
+  path: '/report',
+  element: <Reports/>
+},
+{
+  path: '/parent',
+  element: <ParentPortal/>
+},
 {
   path: '/profile',
   element: <StudentProfile/>
+},
+{
+  path: '/faculty',
+  element: <FacultyPortal/>
 },
   {
     path: '*',

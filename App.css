@@ -280,7 +280,7 @@ position: fixed;
 
 /* Modal Content */
 .modal-content {
-  background: #171515;
+  background: #34697e;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -842,7 +842,7 @@ th {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  height: 460px;
+  height: 420px;
   backdrop-filter:blur(80px) ;
   border: 2px solid rgb(113, 229, 245);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
@@ -918,7 +918,7 @@ th {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: left;
     width: 50%;
-    height: 400px;
+    height: 360px;
     border: 2px solid #34697e;
 
 }
@@ -942,3 +942,62 @@ th {
 .info strong {
   color: black;
 }
+/*....................facultypage.............*/
+.con{
+max-width: 1000px;
+margin: 50px 50px;
+background:transparent;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+height: 425px;
+backdrop-filter:blur(80px) ;
+border: 2px solid rgb(113, 229, 245);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
+}
+/* Mark Attendance */
+.attendance-form {
+  margin-top: 0px;
+  text-align: left;
+}
+
+.attendance-form label {
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.attendance-form select {
+  width: 30%;
+  padding: 0px;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+
+.attendance-btn {
+  background-color:#306c83;
+  color: white;
+  font-size: 14px;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.attendance-btn:hover {
+  background-color: #333;
+}
+.p{
+  color: white;
+}
+h5{
+  font-weight: bold;
+}
+h4{
+  color: #34697e;
+  font-weight: bold;
+}
+
+
