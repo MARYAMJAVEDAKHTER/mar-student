@@ -8,7 +8,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './page/About';
 import Error404 from './page/Error404';
 import App from './App';
-import Home from './Home';
 import Login from './component/Login';
 import Signup from './component/Signup';
 import StudentDashboard from './component/StudentDashboard';
@@ -19,7 +18,8 @@ import AdminPanel from './component/admin';
 import Reports from './component/report';
 import ParentPortal from './component/parent';
 import FacultyPortal from './component/Faculty';
-
+import Dashboard from './component/StudentDashboard';
+import AttendanceHistory from './component/history';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let route = createBrowserRouter([
@@ -41,7 +41,7 @@ let route = createBrowserRouter([
  },
  {
   path: '/student',
-  element: <StudentDashboard/>
+  element: <Dashboard/>
 },
 {
   path: '/term',
@@ -71,6 +71,10 @@ let route = createBrowserRouter([
 {
   path: '/faculty',
   element: <FacultyPortal/>
+},
+{
+  path: '/history',
+  element: <AttendanceHistory/>
 },
   {
     path: '*',

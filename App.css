@@ -26,11 +26,10 @@ color: white;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     background-color: #1d3b47;
-    position: fixed;
+position: relative;
     left: 0;
-    z-index: 10;
     overflow: hidden;
   }
   
@@ -42,7 +41,8 @@ color: white;
   margin: 0;
   align-items: center; /* Vertically center karne ke liye */
   padding: 0px 0px;
-  line-height: 15px; /* Match navbar height */
+  line-height: 15px;
+ /* Match navbar height */
 
 }
 
@@ -834,75 +834,263 @@ th {
   background-color:#1a4353;
 }
 /*...................parent.....................*/
-.contain {
-  max-width: 1000px;
-  margin: 50px 50px;
-  background:transparent;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+/* App.css */
+
+
+.dashboard-title {
   text-align: center;
-  height: 420px;
-  backdrop-filter:blur(80px) ;
-  border: 2px solid rgb(113, 229, 245);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better visibility */
-
-}
-.query-btn{
-  background-color:#526c76;
-  color: white;
-  font-size: 14px;
-  padding: 5px 5px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.query-btn:hover {
-  background-color:#1a4353;
-}
-/* Query Form Section */
-.query-form {
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  height: 140px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-  margin-top: 10px;
-  text-align: left;
-  width: 70%;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
 }
 
-.query-form:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+/* Select Child dropdown */
+.form-group {
+  margin-bottom: 25px;
 }
 
-.query-form label {
-  font-size: 18px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+.form-label strong {
+  color: black; /* Medium gray */
+  font-size: 1.1rem;
 }
 
-.query-form textarea {
-  width: 50%;
-  height: 40px;
-  border: 1px solid #ccc;
+.form-select {
+  padding: 12px;
+  border: 1px solid #ced4da; /* Light gray border */
   border-radius: 8px;
-  resize: none;
-  transition: border-color 0.2s;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  margin-bottom: 10px
+  font-size: 1rem;
+  color: #495057;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.query-form textarea:focus {
-  border-color: #1a4353;
-  outline: none;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+.form-select:focus {
+  border-color: #007bff; /* Primary blue focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
+/* Attendance card */
+.attendance-card {
+  height: 300px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.attendance-card,
+.cont {
+  overflow: visible; /* Or auto if you need scrolling */
+  overflow-y: visible;
+}
+.attendance-card .card-body {
+  padding: 25px;
+}
+
+.attendance-card h5 {
+  color: #257382; /* Success green */
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.attendance-card .text-muted {
+  color: #257382 !important;
+}
+
+.attendance-card .text-success {
+  color: #257382 !important;
+  font-size: 1.1rem;
+}
+
+.attendance-card .text-danger {
+  color: #dc3545 !important;
+  font-size: 1.1rem;
+}
+
+.attendance-card .form-control { /* Style for the DatePicker input */
+  padding: 8px;
+  background-color: #184c56;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.attendance-card .react-datepicker-wrapper input.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+
+
+/* Query card */
+.query-card {
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.query-card .card-body {
+  padding: 25px;
+}
+
+.query-card h5 {
+  color:#257382; /* Primary blue */
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.query-card .form-control { /* Style for the query textarea */
+  padding: 12px;
+  border: 1px solid #a8dadc; /* Soft teal border */
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #495057;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.query-card .form-control:focus {
+  border-color:#257382; /* Success green focus */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.query-card .btn-primary {
+  background-color: #184c56; /* Primary blue button */
+  border-color: #007bff;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.query-card .btn-primary:hover {
+  background-color: #257382;
+  border-color: #0056b3;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+.query-card .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/* Submitted queries card */
+.query-list-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.query-list-card .card-body {
+  padding: 25px;
+}
+
+.query-list-card h5 {
+  color:#257382; /* Muted gray */
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.query-list-card .list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.query-list-card .btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+  transition: color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.query-list-card .btn-outline-danger:hover {
+  background-color: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+  box-shadow: 0 0.125rem 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+.query-list-card .btn-outline-danger:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+}
+
+/* react-datepicker styles (ensure these are present for the calendar) */
+.react-datepicker-wrapper {
+  display: inline;
+  background-color:white;
+  padding: 0;
+}
+
+.react-datepicker {
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow-x: hidden;
+  max-height: none;
+}
+
+.react-datepicker__header {
+  background-color:white;
+  border-bottom: 1px solid #eee;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: white;
+  font-weight: normal;
+  width: 50px;
+  height: 29px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-range,
+.react-datepicker__day--in-selecting-range {
+  background-color: #007bff !important;
+  color: white !important;
+  border-radius: 0.3rem;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__day-name:hover {
+  background-color: #e9ecef;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.react-datepicker__current-month {
+  color: #343a40;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.react-datepicker__navigation {
+  border: none;
+  background: none;
+  color: #6c757d;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.react-datepicker__navigation:hover {
+  opacity: 0.8;
+}
+
+
+
+
 /*.........................................profile..............*/
 /* Profile Container */
 .profile {
@@ -999,5 +1187,191 @@ h4{
   color: #34697e;
   font-weight: bold;
 }
+/*.........historystd...............*/
+/* General container styling */
+.cont {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:transparent;
+  backdrop-filter: blur(70px);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(113, 229, 245);
 
+}
 
+/* Header text styling */
+.mb-4 p.text-muted {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Stats card grid */
+.row.row-cols-sm-3 > .col {
+  margin-bottom: 15px;
+}
+
+/* Individual stats card */
+.card.shadow-sm {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card.shadow-sm:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding:25px;
+}
+
+.card-body p.small {
+  color: #555;
+  margin-bottom:25px;
+}
+
+.card-body p.h5 {
+  margin-bottom: 0;
+}
+
+/* Colorful stats numbers */
+.card-body .text-success {
+  color: #28a745 !important; /* Vibrant green */
+}
+
+.card-body .text-danger {
+  color: #dc3545 !important; /* Energetic red */
+}
+
+.card-body .text-primary {
+  color: #007bff !important; /* Cheerful blue */
+}
+
+/* Colorful icon backgrounds */
+.bg-success.bg-opacity-25 {
+  background-color: rgba(40, 167, 69, 0.25) !important;
+}
+
+.bg-danger.bg-opacity-25 {
+  background-color: rgba(220, 53, 69, 0.25) !important;
+}
+
+.bg-primary.bg-opacity-25 {
+  background-color: rgba(0, 123, 255, 0.25) !important;
+}
+
+/* Calendar section card */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.card-body h2.h6 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Previous/Next month buttons */
+.card-body button.btn-outline-secondary {
+  border-color: #ccc;
+  color: #666;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.card-body button.btn-outline-secondary:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+/* react-datepicker styling */
+.react-datepicker {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.react-datepicker__header {
+  background-color: #f0f8ff; /* Light blue header */
+  border-bottom: 1px solid #d3e0e9;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: #444;
+  font-weight: bold;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-range,
+.react-datepicker__day--in-selecting-range {
+  background-color: #007bff !important; /* Cheerful blue selection */
+  color: white !important;
+  border-radius: 6px;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__day-name:hover {
+  background-color: #e6f2ff; /* Light hover effect */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.present-day {
+  background-color: #d4edda !important; /* Soft green for present */
+  color: #155724 !important;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.absent-day {
+  background-color: #f8d7da !important; /* Soft red for absent */
+  color: #721c24 !important;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Legend styling */
+.mt-3.d-flex.gap-3 {
+  margin-top: 1.5rem;
+}
+
+.d-flex.align-items-center.gap-2 .rounded {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.d-flex.align-items-center.gap-2 span.small {
+  color: #666;
+}
+.react-datepicker__day--present {
+  background-color: #d4edda !important;
+  color: #155724 !important;
+  border-radius: 50% !important;
+  font-weight: bold;
+  box-shadow: 0 0 4px rgba(40, 167, 69, 0.4);
+}
+
+.react-datepicker__day--absent {
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+  border-radius: 50% !important;
+  font-weight: bold;
+  box-shadow: 0 0 4px rgba(220, 53, 69, 0.4);
+}
+
+.react-datepicker__day--present:hover,
+.react-datepicker__day--absent:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
