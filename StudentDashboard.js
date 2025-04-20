@@ -43,6 +43,10 @@ const StudentDashboard = () => {
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/profile">Profile</Link></li>
+            <li><Link to="/history">History</Link></li>
+            <li><Link to="/parent">Parent </Link></li>
+            <li><Link to="/faculty">faculty</Link></li>
+            <li><Link to="/admin">admin</Link></li>
              {/* Logout Icon on Leftmost Side */}
              <li className="logout-icon" onClick={logout}>
               <FiLogOut size={24} color="#ff4d4d" style={{ cursor: "pointer" }} />
@@ -53,12 +57,13 @@ const StudentDashboard = () => {
 
       {/* Student Dashboard */}
       <div className="container">
-        <h2>Attendance History</h2>
+        <h2>DailyAttendance</h2>
         <table>
           <thead>
             <tr>
+              <th>Studentid</th>
+              <th>Studentname</th>
               <th>Date</th>
-              <th>Subject</th>
               <th>Class</th>
               <th>Section</th>
               <th>Status</th>

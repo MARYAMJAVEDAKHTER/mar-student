@@ -5,6 +5,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link, useNavigate } from "react-router-dom";
+import { FiLogOut } from "react-icons/fi"; // Import logout icon
+import "../App.css"; // Import CSS file
 
 // Mock student attendance data
 const studentAttendance = {
@@ -29,6 +32,7 @@ const studentAttendance = {
 };
 
 function FacultyPortal() {
+  const navigate = useNavigate();
   const [selectedMonth, setSelectedMonth] = useState(new Date());
   const [searchStudent, setSearchStudent] = useState('');
 
@@ -73,10 +77,29 @@ function FacultyPortal() {
       window.open('data:text/csv;charset=utf-8,' + escape(csvContent));
     }
   };
+  // Logout function
+  const logout = () => {
+    alert("You have been logged out!");
+    navigate("/login");
+  };
 
   return (
+    <div>
+        <header className="navbar">
+        <nav>
+          <ul className="nav-links">
+            <li><Link to="/student">Home</Link></li>
+            <li><Link to="/response">Query</Link></li>
+            <li><Link to="/notification">Notification</Link></li>
+            {/* Logout Icon on Leftmost Side */}
+            <li className="logout-icon" onClick={logout}>
+              <FiLogOut size={24} color="#ff4d4d" style={{ cursor: "pointer" }} />
+            </li>
+          </ul>
+        </nav>
+      </header>
     <div className="cont">
-      <h4>Faculty Dashboard</h4>
+    <h3 className="dashboard-title">👩‍🏫 Faculty Dashboard</h3> 
 
       <div className="d-flex justify-content-between align-items-center mb-3">
         <Form.Control
@@ -93,7 +116,6 @@ function FacultyPortal() {
           dateFormat="MMMM yyyy"
           showMonthYearPicker
           className="form-control"
-          style={{ maxWidth: '200px' }}
         />
       </div>
 
@@ -125,6 +147,7 @@ function FacultyPortal() {
           </Card.Body>
         </Card>
       )}
+    </div>
     </div>
   );
 }

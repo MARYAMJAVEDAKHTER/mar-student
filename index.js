@@ -14,12 +14,15 @@ import StudentDashboard from './component/StudentDashboard';
 import Terms from './page/Term';
 import PrivacyPolicy from './page/Privacy';
 import StudentProfile from './component/Profile';
-import AdminPanel from './component/admin';
 import Reports from './component/report';
 import ParentPortal from './component/parent';
 import FacultyPortal from './component/Faculty';
 import Dashboard from './component/StudentDashboard';
 import AttendanceHistory from './component/history';
+import AdminDashboard from './component/admin';
+import AdminPanel from './component/manageuser';
+import BulkNotifications from './component/notifi';
+import ParentMessages from './component/responsequery';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 let route = createBrowserRouter([
@@ -61,8 +64,20 @@ let route = createBrowserRouter([
   element: <Reports/>
 },
 {
+  path: '/response',
+  element: <ParentMessages/>
+},
+{
+  path: '/notification',
+  element: <BulkNotifications/>
+},
+{
   path: '/parent',
   element: <ParentPortal/>
+},
+{
+  path: '/dashboard',
+  element: <AdminDashboard/>
 },
 {
   path: '/profile',

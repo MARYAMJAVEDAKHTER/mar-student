@@ -81,7 +81,8 @@ function AttendanceHistory() {
     </header>
       <div className="cont">
         <div className="mb-4">
-          <p className="text-muted">Track your monthly attendance records</p>
+        <h3 className="dashboard-title">🗓️📊 Attendance History</h3>
+        <p className="text-muted"><h4>Track your monthly attendance records</h4></p>
         </div>
 
         <div className="row row-cols-1 row-cols-sm-3 g-3 mb-4">
