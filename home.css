@@ -1,0 +1,261 @@
+/*.........newabout.......*/
+.login-button {
+  background-color: #7ebbc4; /* Purple color from the image */
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #17a2b8; /* Darker shade on hover */
+}
+/* HeroSectionWithImage.css */
+/* HeroSectionWithImage.css */
+/*.................hero................*/
+.hero {
+  color: transparent;
+   text-align: left;
+   padding: 10px 20px;
+   margin-top: 5px;
+   margin-bottom: 90px;
+   
+ }
+ 
+ 
+ 
+ .hero p {
+   color:white;
+   font-weight: bold;
+   font-size: 20px;
+   margin-bottom: 10px;
+   text-align: left;
+ }
+ 
+.hero-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse; /* This places the image on the left, text on the right */
+  padding: 4rem 2rem;
+  background-color: transparent;
+}
+
+.hero-content {
+  max-width: 50%;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+
+/* ... other styles remain the same ... */
+
+
+
+/* HERO TEXT */
+.hero-content {
+  flex: 1;
+    width: 300px;
+    padding-right: 1rem;
+}
+
+.hero-title {
+  color: #7dc1dc;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hero-subtitle {
+  color: #7dc1dc;
+  font-size: 23px;
+}
+
+
+.hero-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+.camera-box-outer {
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+  opacity: 0.75;
+  margin-bottom: 320px;
+  margin-top: 520px;
+  margin-right: 50px;
+  margin-left: -10px;
+}
+
+.camera-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.camera-icon {
+  width: 1px;
+  height: 4rem;
+  color: #138496;
+}
+
+/* HERO IMAGE */
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1450px;
+    background-color: transparent;
+    padding-right: 360px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: -70px;
+
+}
+
+
+/* RESPONSIVE HERO */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image-container {
+    padding: 1rem 0;
+  }
+
+
+  .hero-image-container {
+    width: 50%;
+  }
+}
+
+/*.new home.........*/
+/* KeyFeaturesSection.css */
+.features-section {
+  margin-left: 400px;
+  margin-top: -40px;
+  width: 300px;
+  padding: 1px 1px;
+  text-align: center;
+  color:white;
+  backdrop-filter: blur(20px);
+  background-color:transparent; /* Light background */
+}
+
+
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.feature-card {
+  background-color:transparent;
+  backdrop-filter: blur(100px);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+  background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(71, 138, 158, 0.2));
+
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon-container {
+  background-color: #f0f0f0; /* Light background for the icon */
+  border-radius: 5px;
+  width: 50px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 50px;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 30px;
+  color: #257382; /* Purple color for the icons */
+}
+
+/* Style for SVG icons if you want to control their color directly */
+.feature-icon-container svg {
+  fill: #257382;
+}
+
+.camera-box-outer {
+  position: relative;
+  border-radius: 8px;
+  padding: 10px;
+  background: linear-gradient(to right, #307892, #307892);
+  opacity: 0.75;
+  margin-top: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+
+}
+
+.camera-box {
+  position: relative;
+  background-color:rgb(235, 234, 234);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.feature-card h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color:#d3f1f9;
+  margin-bottom: 0.5rem;
+}
+
+.camera-icon {
+  width: 6rem;
+  height: 4rem;
+  color: #114757;
+  margin: 10px auto;
+  position: relative;
+}
+.feature-card p {
+  font-size: 17px;
+  color:rgb(218, 216, 216);
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+}
+
