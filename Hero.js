@@ -18,7 +18,7 @@ const Hero = () => {
               <span className="hero-subtitle">For Modern Education</span>
             </h3>
             <p className="hero-description">
-              Streamline attendance tracking with facial recognition technology.
+              Streamline attendance tracking with face recognition technology.
               Connect students, parents, faculty, and administrators on one secure platform.
             </p>
           </div>
