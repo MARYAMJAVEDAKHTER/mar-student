@@ -1,0 +1,198 @@
+
+/*..header...........*/
+/* Common Top Bar (Navbar/Header/Footer) */
+.header{
+color: white;
+    word-spacing: 10px;
+    padding: 10px 10px;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #1d3b47;
+position: relative;
+    left: 0;
+    overflow: hidden;
+  }
+ 
+  
+/* Navbar Links */
+.nav-links {
+  list-style-type: style none;
+  display: flex;
+  gap: 10px;
+  margin-right: 450px;
+  margin-top: 50px;
+  align-items: center; /* Vertically center karne ke liye */
+  padding: 10px 10px;
+  line-height: 15px;
+
+
+}
+
+.nav-links li {
+  display: inline;
+  height: 50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #5fc9f3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* Navbar-specific positioning */
+.navbar {
+  color: white;
+  word-spacing: 10px;
+  padding: 10px 0;
+  width: 100%;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c687a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden; 
+}
+/*other Navbar Links */
+.nav-link {
+  list-style-type: style none;
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Vertically center karne ke liye */
+  padding: 0px 0px;
+  margin-top:0px;
+top: 0;
+}
+
+.nav-link li {
+  display: inline;
+  height: 50px;
+}
+
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* otherHover Effect */
+.nav-link a:hover {
+  color: #5fc9f3;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+/* otherNavbar-specific positioning */
+.nav {
+  color: white;
+  word-spacing: 10px;
+  padding: 10px 10px;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d3b47;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden; 
+}
+
+/* Hover Effect */
+
+/* Features Section */
+
+.menu{
+  width: 80%;
+  height: 100%;
+background-color:transparent;
+text-align: left;
+list-style: none;
+  position:fixed;
+  left: -100%;
+  transition: 0.5s;
+}
+.menu ul li{
+  list-style: none;
+  padding: 10px 0px;
+}
+.mc{
+  position: absolute;
+  right: 10px;
+
+}
+.active{
+  left: 0%;
+}
+.home-container {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.card button {
+  padding: 10px 15px;
+  background-color: #184c60;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #5fc9f3;
+}
